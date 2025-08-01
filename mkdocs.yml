@@ -11,9 +11,10 @@ repo_name: abinkiewicz/ds_ai_portfolio
 repo_url: https://github.com/abinkiewicz/data_science_portfolio
 
 theme:
+  name: material
   palette:
 
-    # Palette toggle for automatic mode
+    # Automatyczny tryb (bazuje na ustawieniach systemu)
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
@@ -21,7 +22,7 @@ theme:
       primary: deep-purple
       accent: deep-purple
 
-    # Palette toggle for light mode
+    # Tryb jasny
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
@@ -30,7 +31,7 @@ theme:
       primary: deep-purple
       accent: deep-purple
 
-    # Palette toggle for dark mode
+    # Tryb ciemny
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
@@ -38,6 +39,7 @@ theme:
         name: Switch to system preference
       primary: deep-purple
       accent: deep-purple
+
 
 nav:
 - Strona Domowa: index.md
