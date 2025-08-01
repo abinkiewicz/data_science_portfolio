@@ -13,8 +13,6 @@ repo_url: https://github.com/abinkiewicz/data_science_portfolio
 theme:
   name: material
   palette:
-      primary: indigo
-
     # Palette toggle for light mode
     - scheme: default
       toggle:
@@ -26,7 +24,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
+      primary: indigo
+      
 nav:
 - Strona Domowa: index.md
 - Obecny projekt:
@@ -34,3 +33,6 @@ nav:
 - Poprzednie projekty:
   - "TranscriptMe": transcript_me/index.md
 
+theme:
+  palette:
+    primary: indigo
