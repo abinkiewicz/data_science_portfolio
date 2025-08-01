@@ -13,26 +13,36 @@ repo_url: https://github.com/abinkiewicz/data_science_portfolio
 theme:
   name: material
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - scheme: slate
+    # Automatyczny tryb (bazuje na ustawieniach systemu)
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-4
+        icon: material/brightness-auto
         name: Switch to light mode
       primary: indigo
-      
+      accent: indigo
+
+    # Tryb jasny
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+
+    # Tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: indigo
+      accent: indigo
+
 nav:
 - Strona Domowa: index.md
 - Obecny projekt:
   - "PreorderMe": preorder_me/index.md
 - Poprzednie projekty:
   - "TranscriptMe": transcript_me/index.md
-
-theme:
-  palette:
-    primary: indigo
