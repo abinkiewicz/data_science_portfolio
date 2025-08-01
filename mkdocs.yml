@@ -6,12 +6,25 @@ site_author: Aleksandra Binkiewicz
 site_url: https://abinkiewicz.github.io/data_science_portfolio
 site_description: >-
     Portfolio moich wspaniałych projektów z Data Science i AI!
-    
+
 repo_name: abinkiewicz/ds_ai_portfolio
 repo_url: https://github.com/abinkiewicz/data_science_portfolio
 
 theme:
   name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 nav:
 - Strona Domowa: index.md
